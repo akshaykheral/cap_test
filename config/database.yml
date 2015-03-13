@@ -12,7 +12,7 @@ default: &default
 development: 
   adapter: postgresql
   encoding: unicode
-  database: db/development.postgresql
+  database: hello_world_development
   pool: 5
   username: joe
   password: 123456
@@ -24,7 +24,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: db/test.postgresql
+  database: hello_world_test
   pool: 5
   username: joe
   password: 123456
@@ -34,7 +34,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: db/production.postgresql
+  database: dhello_world_production
   pool: 5
   username: joe
   password: 123456
