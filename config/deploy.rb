@@ -17,14 +17,14 @@ set :bundle_roles, :all
 
 
 
-set :application, 'rd'
-set :repo_url, 'git@github.com:test-rd/rd.git'
+set :application, 'cap_test'
+set :repo_url, 'git@github.com:akshaykheral/cap_test.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/bhuwan/deploy'
+set :deploy_to, '/home/akki/deploy'
 
 # Default value for :scm is :git
 # set :scm, :git
