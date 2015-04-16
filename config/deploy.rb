@@ -64,12 +64,13 @@ namespace :deploy do
   
   namespace :deploy do  
     desc "Update the crontab file"  
-    task :update_crontab, :roles => :db do  
-      run "cd release_path.join && whenever --update-crontab store"  
+    task :update_crontab do
+      on roles(:db) do
+        run "cd release_path.join && whenever --update-crontab store"
+      end  
     end
   end  
 
   after :publishing, :restart
   after :finishing, 'deploy:cleanup'
-
 end
