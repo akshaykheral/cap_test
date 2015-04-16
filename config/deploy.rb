@@ -47,10 +47,7 @@ namespace :deploy do
     end
   end
 
-  desc "Symlink shared configs and folders on each release."
-  task :symlink_shared do
-    run "ln -nfs shared_path.join('config/database.yml') release_path.join('config/database.yml')"
-  end
+
 
   desc "Update the crontab file"
   #puts "Update the crontab file".blue.on_red
@@ -60,7 +57,7 @@ namespace :deploy do
   end
   
   
-  after "deploy:symlink_shared", "deploy:update_crontab"  
+  after "deploy:symlink:linked_dirs", "deploy:update_crontab"  
   
   namespace :deploy do  
     desc "Update the crontab file"  

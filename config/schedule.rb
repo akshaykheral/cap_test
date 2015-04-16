@@ -1,3 +1,7 @@
+every 1.minute do
+  command 'echo hello'
+end
+
 every :day, :at => '1:37pm', :roles => [:app] do
   rake 'app:task' # will only be added to crontabs of :app servers
 end
@@ -9,3 +13,4 @@ end
 every :day, :at => '12:02am' do
   command "run_this_everywhere" # will be deployed to :db and :app servers
 end
+
