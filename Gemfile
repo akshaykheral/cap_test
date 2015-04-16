@@ -32,8 +32,18 @@ gem 'whenever'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'capistrano', '~> 3.2.1'
+gem 'capistrano', group: :development
+gem 'capistrano-rvm', group: :development
+gem 'capistrano-sidekiq' , group: :development
+
+
+
 gem 'nginx'
+
+group :development do
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
