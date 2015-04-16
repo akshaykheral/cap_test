@@ -1,6 +1,9 @@
+require 'whenever/capistrano'
+
 set :application, 'cap_test'
 set :repo_url, 'git@github.com:akshaykheral/cap_test.git'
 
+set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
 role :app, "52.74.3.7"
 role :web, "52.74.3.7"
 role :db,  "52.74.3.7", :primary => true
