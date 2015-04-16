@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'capistrano', '~> 3.4.0'
+gem 'capistrano', '~> 3.2.1'
 gem 'nginx'
 
 group :development, :test do
