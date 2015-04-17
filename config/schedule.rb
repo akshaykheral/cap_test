@@ -1,5 +1,5 @@
 every 1.minute do
-  command 'echo hello'
+  command 'echo hey'
 end
 
 every :day, :at => '1:37pm', :roles => [:app] do
