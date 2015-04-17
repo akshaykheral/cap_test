@@ -4,9 +4,9 @@
 # is considered to be the first unless any hosts have the primary
 # property set.  Don't declare `role :all`, it's a meta role.
 
-role :app, %w{ubuntu@ec2-52-74-3-7.ap-southeast-1.compute.amazonaws.com}
-role :web, %w{ubuntu@ec2-52-74-3-7.ap-southeast-1.compute.amazonaws.com}
-role :db,  %w{ubuntu@ec2-52-74-3-7.ap-southeast-1.compute.amazonaws.com}
+role :app, %w{ubuntu@52.74.3.7}
+role :web, %w{ubuntu@52.74.3.7}
+role :db,  %w{ubuntu@52.74.3.7}
 
 
 # Extended Server Syntax
@@ -15,7 +15,7 @@ role :db,  %w{ubuntu@ec2-52-74-3-7.ap-southeast-1.compute.amazonaws.com}
 # server list. The second argument is a, or duck-types, Hash and is
 # used to set extended properties on the server.
 
-server 'ec2-52-74-3-7.ap-southeast-1.compute.amazonaws.com', user: 'ubuntu', roles: %w{web app}, my_property: :my_value
+server '52.74.3.7', user: 'ubuntu', roles: %w{web app}, my_property: :my_value
 
 
 # Custom SSH Options
