@@ -25,11 +25,11 @@ server '52.74.3.7', user: 'ubuntu', roles: %w{web app}, my_property: :my_value
 #
 # Global options
 # --------------
-#  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+  set :ssh_options, {
+    keys: %w(/home/ubuntu/.ssh/authorized_keys),
+    forward_agent: false,
+    auth_methods: %w(publickey)
+  }
 #
 # And/or per server (overrides global)
 # ------------------------------------
