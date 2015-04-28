@@ -34,7 +34,6 @@ gem 'whenever'
 # gem 'capistrano-rails', group: :development
 gem 'capistrano', '~> 3.2.1'
 gem 'capistrano-rvm', group: :development
-gem 'capistrano-sidekiq' , group: :development
 
 
 
