@@ -1,0 +1,5 @@
+GIT_WORK_TREE=/home/ubuntu/myapp git checkout -f
+echo "Installing dependencies..."
+cd /home/ubuntu/deploy/current
+bundle install
+echo "Restarting node.js..."
