@@ -1,3 +1,14 @@
+set :stage, :development
+server '54.69.15.41',
+user: 'centos',
+roles: %w{app},
+ssh_options: {
+	user: 'centos', # overrides user setting above
+	keys: %w(/home/akki/Desktop/keys/StagingCentOS.pem),
+	forward_agent: false,
+	auth_methods: %w(publickey password),
+	# password: ''
+}
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
