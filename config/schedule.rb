@@ -1,3 +1,5 @@
+env :PATH, ENV['PATH']
+
 every 1.minute do
   command 'echo hey'
 end

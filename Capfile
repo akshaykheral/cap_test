@@ -9,7 +9,8 @@ require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 
 require "whenever/capistrano"
-
+require 'capistrano/rbenv'
+	set :rbenv_custom_path, '/home/centos/.rbenv'
 # Includes tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
