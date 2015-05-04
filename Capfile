@@ -10,6 +10,9 @@ require 'capistrano/rails/migrations'
 
 require "whenever/capistrano"
 require 'capistrano/rbenv'
+
+set :whenever_command, "bundle exec whenever"
+
 	set :rbenv_custom_path, '/home/centos/.rbenv'
 # Includes tasks from other gems included in your Gemfile
 #

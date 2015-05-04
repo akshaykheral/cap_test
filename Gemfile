@@ -12,8 +12,11 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+gem 'execjs'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
+
+gem 'rake', '~> 10.4.2'
 
 gem 'mandrill-rails'
 # Use jquery as the JavaScript library
@@ -35,7 +38,7 @@ gem 'whenever'
 # gem 'capistrano-rails', group: :development
 gem 'capistrano', '~> 3.2.1'
 gem 'capistrano-rvm', group: :development
-
+gem 'capistrano-rbenv'
 
 
 gem 'nginx'
