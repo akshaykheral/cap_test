@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'execjs'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
+gem 'minitest', '~> 5.6.0'
 
 gem 'rake', '~> 10.4.2'
 
