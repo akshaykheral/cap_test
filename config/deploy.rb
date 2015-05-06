@@ -26,7 +26,7 @@ set :repo_url, 'git@github.com:akshaykheral/cap_test.git'
 set :user, "centos"
 set :use_sudo, false
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/home/111/deploy'
+set :deploy_to, '/home/222/deploy'
 set :branch, "master"
 # Default value for :scm is :git
 # set :scm, :git
