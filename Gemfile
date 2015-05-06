@@ -16,6 +16,7 @@ gem 'execjs'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 gem 'minitest', '~> 5.6.0'
+gem 'colorize', '~> 0.7.7'
 
 gem 'rake', '~> 10.4.2'
 
